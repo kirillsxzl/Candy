@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:fillViewport="true" android:background="#273236" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/slogan"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp">
+                <TextView
+                    android:id="@+id/openVK"
+                    android:text="Candy"
+                    android:textColor="@android:color/white"
+                    android:layout_centerInParent="true"
+                    android:textSize="48dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:layout_below="@id/openVK"
+                    android:text="We make it tastier"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/login"
+                    android:hint="Login"
+                    app:primaryColor="@android:color/white"
+                    app:floatingLabel="highlight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_below="@id/login"
+                    android:id="@+id/password"
+                    app:primaryColor="@android:color/white"
+                    android:inputType="textPassword"
+                    app:floatingLabel="highlight"
+                    android:layout_marginTop="3dp"
+                    android:hint="Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <Button
+                    android:layout_below="@id/password"
+                    android:id="@+id/loginButton"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/green_button"
+                    android:text="LOGIN"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" />
+                <Button
+                    android:id="@+id/signup"
+                    android:layout_marginTop="50dp"
+                    android:layout_below="@id/loginButton"
+                    android:background="@android:color/transparent"
+                    android:text="SIGN UP"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" />
+                <Button
+                    android:layout_below="@id/signup"
+                    android:id="@+id/forgot_password"
+                    android:text="Forgot password?"
+                    android:background="@android:color/transparent"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
